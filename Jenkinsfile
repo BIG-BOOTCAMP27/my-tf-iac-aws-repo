@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BIG-BOOTCAMP27/my-tf-iac-aws-repo']]])          
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/BIG-BOOTCAMP27/my-tf-iac-aws-repo']]])          
           }
         }
         
